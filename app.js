@@ -1,6 +1,8 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 
+const date=require(__dirname+"/date.js");  // to create your own node package
+
 const app = express();
 
 app.use(express.static("public"));
@@ -12,13 +14,8 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 app.get("/", function(req,res)
 {
-    var today = new Date();
-    var currDay = today.getDay();
-    var day="";
 
-    var options = { weekday: 'long', day: 'numeric', month: 'long'};
-    var day = today.toLocaleDateString("en-US", options);
-    
+    let day= date.getDate();
     res.render("list", {kindOfDay: day, newList: items});
 
 });
