@@ -1,6 +1,6 @@
 # To-Do List
 
-An EJS template application, will work as a to-do list for planning your daily tasks!
+An EJS template application, developed using Node.js and MongoDB, which works as a to-do list for planning your daily tasks!
 
 ![Strike-Off-ToDo-List-Animation](https://user-images.githubusercontent.com/26508129/76392071-dc456100-6396-11ea-8e3d-57a7a13135ab.gif)
 
